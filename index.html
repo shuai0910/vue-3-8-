@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>mycj</title>
+    <!--<script src="src/assets/jquery.min.js" type="text/javascript" charset="utf-8"></script>-->
+    <script>
+    //页面加载时、及改变窗口尺寸时设置html的fontSize
+    var w = document.documentElement.clientWidth;
+    if (w > 750) {
+      w = 750
+    }
+    document.documentElement.style.fontSize = w / 7.5 + "px";
+    window.onresize = function () {
+      document.documentElement.style.fontSize = w / 7.5 + "px";
+    };
+  </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
